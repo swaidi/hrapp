@@ -15,10 +15,10 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.properties import ObjectProperty
 from kivy.uix.checkbox import CheckBox
 from kivy.uix.widget import Widget
-#import sqlalchemy
+import sqlalchemy
 from kivy.uix.image import Image
 import pony
-#import plyer
+import plyer
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.listview import ListItemButton
 
