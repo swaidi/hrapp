@@ -1,0 +1,54 @@
+
+
+<ScreenOne>:
+    #Image:
+     #   source: 'jellyfish.png'
+
+
+
+    Label:
+        text: 'UnIBuK'
+        #pos: 100,50
+        pos_hint: {'center_x': .5,'center_y': .7}
+        font_size: 40
+        font_name: 'Roboto-Thin'
+
+
+    TextInput:
+        id: login_pass
+        size_hint: .7,.06
+        text_size: self.size
+        text: ''
+        pos_hint: {'center_x': .5,'center_y': .4}
+        font_name: 'Roboto-Thin'
+        password: True
+        focus: True
+        hint_text: 'Password'
+
+
+
+
+    TextInput:
+        id: login_text
+        hint_text: 'UserName'
+        size_hint: .7,.06
+        text_size: self.size
+        pos_hint: {'center_x': .5,'center_y': .5}
+        focus: True
+        font_name: 'Roboto-Thin'
+
+
+    Button:
+        id: but
+        size_hint: .7,.06
+        #text_size: self.size
+        pos_hint: {'center_x': .5,'center_y': .3}
+        on_press:root.changer()
+        text: '[b]L[/b]ogin'
+        markup: True
+        font_name: 'Roboto-Thin'
+        font_size: 25
+        background_down: 'background_down.png'
+        background_normal: 'background_normal.png'
+
+

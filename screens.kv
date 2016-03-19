@@ -1,0 +1,149 @@
+<Label>:
+    font_name: 'Roboto-Thin'
+    font_size: 20
+<TextInput>:
+    font_name: 'Roboto-Thin'
+    font_size: 15
+
+
+<ScreenTwo>:
+    BoxLayout:
+        padding: 3
+        orientation: 'vertical'
+        Button:
+            text: 'hi'
+            #pos_hint: {'center_x': .1,'center_y': .2}
+            font_name: 'Roboto-Thin'
+            on_press:root.changer()
+
+        Button:
+            text: 'wprl'
+           # pos_hint: {'center_x': .5,'center_y': .5}
+            font_name: 'Roboto-Thin'
+            on_press:root.change()
+
+<ScreenThree>:
+#registration screen
+    Label:
+        text: 'Full Name : '
+        pos_hint: {'center_x': .1,'center_y': .9}
+        size_hint: .7,.1
+
+
+    TextInput:
+        size_hint: .7,.05
+        text:
+        pos_hint: {'center_x': .52,'center_y': .9}
+        focus: True
+
+    Label:
+        text: 'UserName : '
+        pos_hint: {'center_x': .1,'center_y': .8}
+        size_hint: .7,.1
+
+    TextInput:
+        size_hint: .7,.05
+        text:
+        pos_hint: {'center_x': .52,'center_y': .8}
+        text_size: 15
+
+
+    Label:
+        text: 'Telephone : '
+        pos_hint: {'center_x': .1,'center_y': .7}
+        size_hint: .7,.1
+
+    TextInput:
+        size_hint: .7,.05
+        text:
+        pos_hint: {'center_x': .52,'center_y': .7}
+
+
+    Label:
+        text: 'Email : '
+        pos_hint: {'center_x': .1,'center_y': .6}
+        size_hint: .7,.1
+
+    TextInput:
+        size_hint: .7,.05
+        text:
+        pos_hint: {'center_x': .52,'center_y': .6}
+
+    Button:
+        size_hint: .7,.05
+        text: 'Sign [b]Up[/b]'
+        pos_hint: {'center_x': .52,'center_y': .5}
+        on_press: root.change()
+        markup: True
+        background_normal: 'background_normal.png'
+
+
+    Label:
+        text: '------------------------------- Or -------------------------------'
+        pos_hint: {'center_x': .52,'center_y': .4}
+        size_hint: .7,.05
+
+    Button:
+        size_hint: .4,.05
+        text: ''
+        pos_hint: {'center_x': .52,'center_y': .3}
+        #on_press: root.change()
+        markup: True
+        background_normal: 'fb.png'
+        background_down: 'fb.png'
+
+
+<ScreenFour>:
+#proflie page
+    GridLayout:
+        padding: 5
+        spacing: 10
+        rows: 1
+        Button:
+            text: ' f '
+            #text_size: self.size
+            font_name: 'modernpics'
+            font_size: '250dp'
+        GridLayout:
+            rows: 2
+            Button:
+                text: 'm'
+
+                #text_size: self.size
+                font_name: 'modernpics'
+                font_size: '120dp'
+            Button:
+                text: 'A'
+                #text_size: self.size
+                font_name: 'modernpics'
+                font_size: '120dp'
+            Button:
+                text: 's'
+               #text_size: self.size
+                font_name: 'modernpics'
+                font_size: '120dp'
+                on_press: root.change()
+            Button:
+                text: 'Q'
+                #text_size: self.size
+                font_name: 'heydings_icons'
+                font_size: '100dp'
+
+
+
+<ScreenFive>:
+    BoxLayout:
+        orientation: 'vertical'
+    BoxLayout:
+        height: '40dp'
+        size_hint_y: None
+        TextInput:
+            size_hint_x: 50
+        Button:
+            text: 'Search'
+            size_hint_x: 25
+            text_size: self.size
+            halign: 'center'
+
+
+
